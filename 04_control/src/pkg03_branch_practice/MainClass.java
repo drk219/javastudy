@@ -8,47 +8,62 @@ public class MainClass
     public static void method1() 
     {
         // 월에 따른 계절 출력하기
-        int month = 6;
-        
-        if (month <= 2 || month == 12)
-        {
-         System.out.println("겨울");
-        } 
-        else if (month <= 5) 
-        {
-         System.out.println("봄");
-        } 
-        else if (month <= 8)
-        {
-         System.out.println("여름"); 
-        }
-        else if(month <= 11)
-        {
+      
+        // 방법 1 (내답)
+          int month = 6;
+          
+          if (month <= 2 || month == 12)
+          {
+           System.out.println("겨울");
+          } 
+          else if (month <= 5) 
+          {
+           System.out.println("봄");
+          } 
+          else if (month <= 8)
+          {
+           System.out.println("여름"); 
+          }
+          else
           System.out.println("가을");
-        }
-         
-         /*
-            String season;
-            if (month >= 3 && <= 5) 
-            {
-              season = "spring";
-            } 
-            else if(month >= 6 && <= 8)
-            {
-              season = "summer";
-            }
-            else if (month >= 9 && month <= 11)
-            {
-              season = "fall"
-            }
-            else {season = "winter";}
-            
-            System.Out.println(season);
-         */
+       
+        // 방법 2  
+          int m = 10;
+          String season;
+          
+          if (m >= 3 && m <= 5) 
+          {
+            season = "spring";
+          } 
+          else if(m >= 6 && m <= 8)
+          {
+            season = "summer";
+          }
+          else if (m >= 9 && m <= 11)
+          {
+            season = "fall";
+          }
+          else {season = "winter";}
+          
+          System.out.println(season);
+       
         
-        /*
-           int mod = month % 12
-         */
+        // 방법 3
+          int month1 = 11;
+          String season1;
+          int mod = month1 % 12;
+         
+          if(mod <= 2){
+           season1 = "winter";
+          } else if(mod <= 5){
+           season1 = "spring";
+          } else if(mod <= 8){
+           season1 = "summer";
+          } else {season1 = "fall";}
+         
+          System.out.println(season1);
+           
+        
     }
     
     
@@ -60,36 +75,39 @@ public class MainClass
         // 1~3학년 : 60점 이상이면 합격, 아니면 불합격
         // 4~6학년 : 70점 이상이면 합격, 아니면 불합격
         
-        int score = 64;  // 점수
-        int grade = 4;   // 학년
         
-        if (grade <= 3 && score >=60 ) 
-        {
-          System.out.println("합격");
-        }
-        else if (grade >= 4 && score >= 70) 
-        {
-          System.out.println("합격");
-        }
-        else 
-        {
-          System.out.println("불합격");
-        }
+        // 방법 1 (내답)
+          int score = 64;  // 점수
+          int grade = 4;   // 학년
+          
+          if (grade <= 3 && score >=60 ) 
+          {
+            System.out.println("합격");
+          }
+          else if (grade >= 4 && score >= 70) 
+          {
+            System.out.println("합격");
+          }
+          else 
+          {
+            System.out.println("불합격");
+          }
         
-        /*
-         * int pass = 0;
-         * if(grade >= 1 && grade <= 3){
-         * pass = 60;}
-         * else if(grade>= 4 && grade <= 6){
-         * pass = 70;}
-         * 
-         * 합격 / 불합격
-         * String result = null;
-         * if (score >= pass) {
-         * result = "합격";}
-         * else {
-         * result = "불합격";}
-         */
+        // 방법 2 
+          
+          int pass = 0;
+          if(grade >= 1 && grade <= 3){
+          pass = 60;}
+          else if(grade>= 4 && grade <= 6){
+          pass = 70;}
+          
+          합격 / 불합격
+          String result = null;
+          if (score >= pass) {
+          result = "합격";}
+          else {
+          result = "불합격";}
+        
       
     }
     

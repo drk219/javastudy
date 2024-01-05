@@ -77,11 +77,11 @@ public class MainClass {
     // 1회 모금액 70원
     // 2회 모금액 140원
     //      ...
-    // n회 모금액 100,000원 이상
+    // n회 모금액 10000원 이상
     
     int save = 70;
     int total = 0;
-    final int GOAL = 100_000;
+    final int GOAL = 10_000;
     int nth = 0;
     
     while(total < GOAL) {
@@ -119,8 +119,8 @@ public class MainClass {
     // 2x2=4
     // ...
     
-    for (int n = 1; n <= 9; n++) {
-      for(int dan = 2; dan <= 9; dan++) {
+    for (int n = 1; n <= 9; n++) {             // 'n x 1' 이 고정
+      for(int dan = 2; dan <= 9; dan++) {      // dan은 숫자가 줄마다 바뀐다 
         System.out.print(dan + "x" + n + "=" + dan * n + "\t");
       }
       System.out.println();
@@ -145,11 +145,11 @@ public class MainClass {
      * row=3, star=1~3 
      * row=4, star=1~4 
      * row=5, star=1~5
-     * 
-     * row=1~5, star1~5
      */
     
-    for(int row = 1; row <= 5; row++) {
+    // row= 1 ~ 5, star= 1 ~ 5
+    
+    for(int row = 1; row <= 5; row++) {  
       for(int star = 1; star <= row; star++) {
         System.out.print("*");
       }
@@ -176,10 +176,9 @@ public class MainClass {
      * row=3, star=1~3
      * row=4, star=1~2
      * row=5, star=1~1
-     * 
-     * row 1~5, star 1~6-row
-     * 
      */
+    
+    // row= 1 ~ 5, star= 1 ~ 6-row
     
     for(int row = 1; row < 6; row++) { 
       for(int star = 1; star <= 6 - row; star++) {
@@ -210,9 +209,9 @@ public class MainClass {
      * row=3, space=1~2, star=3~7
      * row=4, space=1~1, star=2~8
      * row=5, space=1~0, star=1~9
-     * 
-     * row=1~5, space=1~5-row, star=6-row~row+4
      */
+    
+    // row= 1 ~ 5, space= 1 ~ 5-row, star= 6-row ~ row+4
     
     for(int row = 1; row < 6; row++) {
       for(int space = 1; space <= 5 - row; space++) {
@@ -244,10 +243,9 @@ public class MainClass {
      * row=3, space=1~2, star=3~7
      * row=4, space=1~3, star=4~6
      * row=5, space=1~4, star=5~5
-     * 
-     * row 1~5, space=1~row-1, star=row~10-row
-     * 
      */
+    
+    // row= 1 ~ 5, space= 1 ~ row-1, star= row ~ 10-row
     
     for(int row = 1; row <= 5; row++) {
       for(int space = 1; space <= row - 1; space++) {
@@ -264,16 +262,16 @@ public class MainClass {
   
   
   public static void main(String[] args) {
-    //method1();
-    //method2();
-    //method3();
-    //method4();
-    //method5();
-    //method6();
-    //method7();
-    //method8();
-    //method9();
-    //method10();
+    method1();
+    method2();
+    method3();
+    method4();
+    method5();
+    method6();
+    method7();
+    method8();
+    method9();
+    method10();
 
   }
 
