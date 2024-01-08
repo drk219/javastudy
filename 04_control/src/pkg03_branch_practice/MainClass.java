@@ -101,14 +101,15 @@ public class MainClass
           else if(grade>= 4 && grade <= 6){
           pass = 70;}
           
+         /*
           합격 / 불합격
           String result = null;
           if (score >= pass) {
           result = "합격";}
           else {
           result = "불합격";}
+         */
         
-      
     }
     
     
