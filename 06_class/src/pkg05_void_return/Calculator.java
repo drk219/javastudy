@@ -3,7 +3,7 @@ package pkg05_void_return;
 public class Calculator {
   
   
-  // 반환 타입이 void 인 경우에는 return; 코드로 메소드 실행을 중지할 수 있다.
+  // 반환 타입이 void 인 경우에는 'return;' 코드로 메소드 실행을 중지할 수 있다.
   // 온리 void 일 때만 가능하다!!
   void root(int number) {
     

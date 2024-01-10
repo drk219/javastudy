@@ -34,7 +34,5 @@ public class Calculator {
     value -= a;
   }
   
-  // 
-  
 
 }
