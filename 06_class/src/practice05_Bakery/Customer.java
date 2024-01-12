@@ -53,9 +53,9 @@ public class Customer {
     
     // 구매 결과 처리
     if(breadChange != null) {
-      count += breadChange.getBread();   // 구매 후 빵 개수의 변화
-      money += breadChange.getChange();  // 구매 후 잔돈의 변화
-      this.money -= money;               // 구매하고 남은 돈
+      this.count += breadChange.getBread();   // 구매 후 빵 개수의 변화
+      this.money += breadChange.getChange();  // 구매 후 잔돈의 변화
+      this.money -= money;                    // 구매하고 남은 돈
     }
   
     
