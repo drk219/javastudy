@@ -12,7 +12,7 @@ public class MainClass {
     DurianHater durianHater = new DurianHater();
     durianHater.eat(new Applemango());
     durianHater.eat(new Pineapple());
-    // durianHater.eat(new Durian());  // 컴파일 오류
+    // durianHater.eat(new Durian());  // 컴파일 오류 eatable 클래스에 속하지 않기에 
     
   }
 

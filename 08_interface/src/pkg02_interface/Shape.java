@@ -27,7 +27,7 @@ public interface Shape {
   // 상수
   /* public final static */ double PI = 3.141592;
   
-  // 추사메소드
+  // 추상메소드
   /* public abstract */ double getArea();
   /* public abstract */ double getCircum();
   

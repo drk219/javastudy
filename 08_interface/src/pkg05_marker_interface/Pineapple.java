@@ -11,6 +11,4 @@ public class Pineapple implements Food, Eatable{
     System.out.println("파인애플 먹는다.");
   }
   
-  
-
 }

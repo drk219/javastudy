@@ -7,7 +7,8 @@ package pkg04_extends_implements;
  */
 
 public class SeoulTravel extends Domestic implements Travel{
-
+//                             클래스 상속        인터페이스 구현
+  
   @Override
   public void sightseeing() {
     System.out.println("남산");
@@ -18,6 +19,4 @@ public class SeoulTravel extends Domestic implements Travel{
     System.out.println("KTX");
   }
   
-  
-
 }

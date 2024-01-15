@@ -1,6 +1,8 @@
 package pkg05_marker_interface;
 
-/* 음식 */
+/* 
+ * 음식 
+ */
 
 public class Durian implements Food {
 
