@@ -9,7 +9,7 @@ public class Bus {
   
   //constructor
   public Bus() {
-    seats = new Seat[20];
+    seats = new Seat[15];
     for(int i = 0; i < seats.length; i++) {
       seats[i] = new Seat();
     }
@@ -23,9 +23,10 @@ public class Bus {
       return;
     }
     for(int i = 0; i < seats.length; i++) {
-      if (seats[i].getPerson()==null) {
+      if (seats[i].getPerson() == null) {
         seats[i].setPerson(person);
         total++;
+        break;       // <-- 중요!!! 까먹지마
       }
     }
   }
@@ -36,20 +37,20 @@ public class Bus {
       System.out.println("Wrong seat number. Check again please");
       return;
     }
-    seats[seatNo -1].setPerson(null);
+    seats[seatNo - 1].setPerson(null);
     total--;
   }
   
   
   // LIST OF PASSENGER
   public void list() {
-    System.out.println("===== LIST OF PASSENGERS =====");
+    System.out.println("=== LIST OF PASSENGERS ===");
     for(int i = 0; i < seats.length; i++) {
       Person person = seats[i].getPerson();
       if (person == null) {
-        System.out.println(String.format("%02d", i + 1) + "is unoccupied");
+        System.out.println("No." + String.format("%02d", i + 1) + " is unoccupied");
       } else {
-        System.out.println("No." + String.format("%02d", i + 1) + " is " + person.getName()+ "'s seat");
+        System.out.println("No." + String.format("%02d", i + 1) + " is " + person.getName() + "'s seat");
       }
     }
   }

@@ -25,7 +25,7 @@ public class MainClass {
     bus.on(new Man("James"));
     bus.on(new Man("Hans"));
     bus.on(new Man("Eric"));
-    bus.on(new Man("Christoph"));
+    bus.on(new Man("Christophe"));
     bus.on(new Man("Charming"));
     
     bus.list();
