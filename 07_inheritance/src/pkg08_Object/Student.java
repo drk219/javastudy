@@ -76,7 +76,6 @@ public class Student {
     bookCount--;
     books[bookCount] = null; 
 
-    
   }
 
   // 책 삭제 (오버로딩)
