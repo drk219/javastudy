@@ -51,7 +51,7 @@ public class BankAccount{
       
     } catch (DepositException e) {       // DepositException e : 예외 원인 객체 (cause)
       
-      throw new RuntimeException(money + "원 입금 불가", e);  
+      throw new RuntimeException(money + "원 입금 불가", e);
       // deposit 메소드 호출한 곳으로 던짐
       
     }
