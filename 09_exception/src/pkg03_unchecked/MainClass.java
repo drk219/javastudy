@@ -4,7 +4,7 @@ public class MainClass {
 
   public static void main(String[] args) {
     
-    // unchecked exception : try - catch 문이 없어도 동작하는 예외 클래스로 RunimeException을 의미한다.
+    // unchecked exception : try - catch 문이 없어도 동작하는 예외 클래스로 RunimeException과 그 자식들을 의미한다.
     
     int mok = 5 / 2;
     

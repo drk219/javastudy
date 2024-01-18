@@ -1,6 +1,9 @@
 package SelfPractice;
 
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
 import java.util.Set;
@@ -44,9 +47,41 @@ public class MainClass {
   }
   
   
+  public static void method3() {   // ArrayList
+    
+    List<Integer> numbers;
+    numbers = new ArrayList<Integer>();
+    
+    numbers.add(1);
+    numbers.add(2);
+    numbers.add(3);
+    numbers.add(4);
+    numbers.add(5);
+    System.out.println(numbers);
+   
+    numbers.set(0, 7);
+    System.out.println(numbers);
+    
+    numbers.remove(4);
+    System.out.println(numbers);
+    
+  }
+  
+  
+  public static void method4() {   // 배열을 List 로
+    
+    String[] arr = new String[] {"A", "B", "C", "D", "E"};
+    List<String> alph = Arrays.asList(arr);
+    System.out.println(alph);
+    
+  }
+
+  
   public static void main(String[] args) {
     method1();
     method2();
+    method3();
+    method4();
   }
 
 }
