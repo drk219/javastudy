@@ -1,4 +1,4 @@
-package Practice03_Employee;
+package practice03_Employee;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;

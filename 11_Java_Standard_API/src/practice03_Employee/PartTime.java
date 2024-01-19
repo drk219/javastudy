@@ -1,4 +1,4 @@
-package Practice03_Employee;
+package practice03_Employee;
 
 public class PartTime extends Employee {
   

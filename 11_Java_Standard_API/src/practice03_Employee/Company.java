@@ -1,4 +1,4 @@
-package Practice03_Employee;
+package practice03_Employee;
 
 import java.util.ArrayList;
 import java.util.List;
