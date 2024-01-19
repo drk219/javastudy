@@ -58,7 +58,7 @@ public class Fighter {
     
     System.out.println("- " + name + "의 펀치");
     
-    int powerRan = (int) (Math.random() * 10 + 1); // 1<= powerRan <= 11 1 ~ 11
+    int powerRan = (int) (Math.random() * 10 + 1); // 1 <= powerRan < 11  (1 ~ 10)
     
     if(powerRan >= p2.getHp()) {
       p2.setHp(0);

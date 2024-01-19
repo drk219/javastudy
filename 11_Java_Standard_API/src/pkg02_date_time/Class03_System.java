@@ -39,7 +39,7 @@ public class Class03_System {
     }
     long end = System.nanoTime();
     
-    System.out.println("String의 + 연산자 : " + (end - start) + "ns");
+    System.out.println("String의 += 연산자 : " + (end - start) + "ns");
     
   }
 

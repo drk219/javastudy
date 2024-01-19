@@ -28,8 +28,8 @@ public class MainClass {
     Bakery bakeryTj = new Bakery(100, 10000);
     Bakery bakeryPb = new Bakery(100, 10000);
     
-    customer.buy(bakeryTj, 5, 3000);
-    customer.buy(bakeryPb, 5, 3000);
+    customer.buy(bakeryTj, 101, 3000);
+    customer.buy(bakeryPb, 1, 3000);
     
     System.out.println("뚜쥬 잔여 빵개수 : "  + bakeryTj.getCount());
     System.out.println("뚜쥬 잔여 돈 : "  + bakeryTj.getMoney());

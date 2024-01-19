@@ -1,0 +1,7 @@
+In Java, the string constant pool is a pool of strings stored in the Java Virtual Machine (JVM). 
+When you create a string using double quotes in Java, it's stored in the string constant pool. 
+The string constant pool has a significant impact on memory efficiency because it allows the JVM to reuse existing strings rather than creating new instances for identical string literals. 
+This is possible because strings in Java are immutable, meaning their values cannot be changed after they are created. 
+As a result, the JVM can safely reuse the same string instance in different parts of the program.
+
+String타입은 가급적 자주 바꾸지 않는것이 좋다
