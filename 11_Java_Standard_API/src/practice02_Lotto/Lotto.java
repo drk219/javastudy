@@ -1,4 +1,4 @@
-package practice02_lotto;
+package practice02_Lotto;
 
 import java.util.ArrayList;
 import java.util.List;

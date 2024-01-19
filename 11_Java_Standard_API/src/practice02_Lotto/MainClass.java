@@ -1,4 +1,4 @@
-package practice02_lotto;
+package practice02_Lotto;
 
 public class MainClass {
 
