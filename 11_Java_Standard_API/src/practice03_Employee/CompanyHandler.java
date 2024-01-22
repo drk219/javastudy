@@ -33,7 +33,6 @@ public class CompanyHandler {
       return new PartTime(empNo, name, sc.nextInt());
     default:
       throw new RuntimeException("잘못된 사원타입입니다.");
-
     }
     
   }
@@ -52,7 +51,6 @@ public class CompanyHandler {
     System.out.println("==== 사원관리 프로그램 시작 ====");
     
     while(true) {
-      
       try {
         System.out.println("\n1.고용 2.해고 3.조회 4.전체조회 0.프로그램종료 >>>");
         String choice = sc.next();
@@ -80,10 +78,10 @@ public class CompanyHandler {
       } catch (Exception e) {
         System.out.println(e.getMessage());
       }
-      
-    
     }
     
   }
+
+  
   
 }
