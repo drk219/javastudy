@@ -11,7 +11,7 @@ import java.util.List;
 public class MainClass {
   
   /*
-   * java.io.FileOutputStream
+   * <java.io.FileOutputStream>
    * 1. 바이트 기반의 파일 출력 스트림이다.
    * 2. 출력 단위
    *    1) int (1 바이트만 내보낼때 사용) - 한개
@@ -19,21 +19,21 @@ public class MainClass {
    */
   
   /*
-   * java.io.BufferedOutputStream
+   * <java.io.BufferedOutputStream>
    * 1. 버퍼링을 지원하는 바이트 출력 스트림이다.
    * 2. 보조 스트림으로 메인 스트림과 함께 사용해야 한다. (단독 사용 불가)
    * 3. 버퍼링을 지원하므로 출력 속도가 향상된다.
    */
   
   /*
-   * java.io.DataOutputStream
+   * <java.io.DataOutputStream>
    * 1. 자바 변수 값을 출력하는 바이트 출력 스트림이다.
    * 2. 보조 스트림으로 메인 스트림과 함께 사용해야 한다.
    * 3. 타입 별로 전용 메소드가 존재한다.
    */
   
   /*
-   * java.io.ObjectOutputStream
+   * <java.io.ObjectOutputStream>
    * 1. 객체를 출력하는 바이트 출력 스트림이다.
    * 2. 보조 스트림으로 메인스트림과 함게 사용해야 한다.
    * 3. 객체를 출력 스트림으로 전송하기 위해서는 직렬화 과정이 필요하다.
@@ -42,7 +42,7 @@ public class MainClass {
    *    2) long serialVersionUID 필드 값을 임의로 생성한다.
    */
   
-  public static void method1() {
+  public static void method1() {  //FileOutputStream(무조건생성)
     
     // 무조건 생성 모드 : 기존에 파일이 있으면 지우고 다시 만든다.
     
@@ -95,7 +95,7 @@ public class MainClass {
         
   }
   
-  public static void method2() {
+  public static void method2() {  //FileOutputStream(추가생성)
     
     // 추가 모드 : 기존 파일이 없으면 
     
@@ -131,7 +131,7 @@ public class MainClass {
     
   }
   
-  public static void method3() {   // 안보고 혼자 완성할 수 있도록!!!!!!!!
+  public static void method3() {  //BufferedOutputStream 안보고 혼자 완성할 수 있도록!!!!!!!!
     
     File dir = new File("\\storage");
     if(!dir.exists()) {
@@ -168,7 +168,7 @@ public class MainClass {
     
   }
   
-  public static void method4() {
+  public static void method4() {  //DataOutputStream
     
     File dir = new File("\\storage");
     if(!dir.exists()) {
@@ -202,7 +202,7 @@ public class MainClass {
     
   }
   
-  public static void method5() {
+  public static void method5() {  //ObjectOutputStream
     
     File dir = new File("\\storage");
     if(!dir.exists()) {
@@ -238,8 +238,7 @@ public class MainClass {
     practice2();
   }
   
-  
-  public static void practice1() {
+  public static void practice1() {  //FileOutputStream 연습
     
     // FileOutputStream 으로 애국가 1절 파일로 보내기 : 시간재기
     // System.nanoTime();
@@ -276,7 +275,7 @@ public class MainClass {
 
   }
   
-  public static void practice2() {
+  public static void practice2() {  //BufferedOuputStream 연습
     
     // BufferedOuputStream 으로 애국가 1절 파일로 보내기 : 시간재기
     // System.nanoTime();

@@ -8,7 +8,7 @@ import java.time.LocalDate;
 public class MainClass {
   
   /*
-   * java.io.File
+   * <java.io.File>
    * 1. 디렉터리, 파일을 관리하는 클래스이다.
    * 2. 디렉터리, 파일을 만들고 삭제할 수 있다.
    * 3. 디렉터리, 파일의 정보(이름, 경로, 크기, 최종수정일 등)을 확인할 수 있다.
@@ -130,8 +130,7 @@ public class MainClass {
 
   }
   
-  
-  public static void practice1() {
+  public static void practice1() {  // 디렉터리 생성 연습
     
     // C:\2024\01\22 디렉터리 만들기 (현재 날짜의 디렉터리 만들기)
     
@@ -158,7 +157,7 @@ public class MainClass {
     
   }
   
-  public static void practice2(File dir) {
+  public static void practice2(File dir) {  // 디렉터리 삭제 연습
     
     // \2024 디렉터리 삭제하기 (비어있는 디렉터리만 삭제할 수 있다.)
     
