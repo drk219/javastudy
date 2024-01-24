@@ -8,14 +8,14 @@ import java.time.LocalDate;
 public class MainClass {
   
   /*
-   * <java.io.File>
+   * < java.io.File >
    * 1. 디렉터리, 파일을 관리하는 클래스이다.
    * 2. 디렉터리, 파일을 만들고 삭제할 수 있다.
    * 3. 디렉터리, 파일의 정보(이름, 경로, 크기, 최종수정일 등)을 확인할 수 있다.
    */
   
   /*
-   * 경로 작성 방법
+   * < 경로 작성 방법 >
    * 1. 경로 구분자 (separator)
    *    1) 윈도우      : 역슬래시(\\)
    *    2) 리눅스, Mac : 슬래시(/)

@@ -11,7 +11,7 @@ import java.util.List;
 public class MainClass {
   
   /*
-   * <java.io.FileOutputStream>
+   * < java.io.FileOutputStream >
    * 1. 바이트 기반의 파일 출력 스트림이다.
    * 2. 출력 단위
    *    1) int (1 바이트만 내보낼때 사용) - 한개
@@ -19,21 +19,21 @@ public class MainClass {
    */
   
   /*
-   * <java.io.BufferedOutputStream>
+   * < java.io.BufferedOutputStream >
    * 1. 버퍼링을 지원하는 바이트 출력 스트림이다.
    * 2. 보조 스트림으로 메인 스트림과 함께 사용해야 한다. (단독 사용 불가)
    * 3. 버퍼링을 지원하므로 출력 속도가 향상된다.
    */
   
   /*
-   * <java.io.DataOutputStream>
+   * < java.io.DataOutputStream >
    * 1. 자바 변수 값을 출력하는 바이트 출력 스트림이다.
    * 2. 보조 스트림으로 메인 스트림과 함께 사용해야 한다.
    * 3. 타입 별로 전용 메소드가 존재한다.
    */
   
   /*
-   * <java.io.ObjectOutputStream>
+   * < java.io.ObjectOutputStream >
    * 1. 객체를 출력하는 바이트 출력 스트림이다.
    * 2. 보조 스트림으로 메인스트림과 함게 사용해야 한다.
    * 3. 객체를 출력 스트림으로 전송하기 위해서는 직렬화 과정이 필요하다.
@@ -41,6 +41,7 @@ public class MainClass {
    *    1) 직렬화할 클래스는 java.io.Serializable 인터페이스를 구현한다. (필수)
    *    2) long serialVersionUID 필드 값을 임의로 생성한다.
    */
+  
   
   public static void method1() {  //FileOutputStream(무조건생성)
     
@@ -128,7 +129,6 @@ public class MainClass {
       e.printStackTrace();
     }
 
-    
   }
   
   public static void method3() {  //BufferedOutputStream 안보고 혼자 완성할 수 있도록!!!!!!!!
@@ -164,7 +164,6 @@ public class MainClass {
     } catch (Exception e) {
       e.printStackTrace();
     }
-    
     
   }
   

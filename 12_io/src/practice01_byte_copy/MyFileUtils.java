@@ -42,7 +42,7 @@ public class MyFileUtils {
       // 원본을 끝까지 읽는다. 읽은 내용을 복사본으로 보낸다.
       int readByte = 0;
       while( (readByte = in.read(bytes)) != -1 ) {
-        out.write(bytes, 0, readByte);;
+        out.write(bytes, 0, readByte);
       }
       
       // 버퍼 출력 스트림 닫기
@@ -61,7 +61,8 @@ public class MyFileUtils {
   // 파일 이동 메소드
   public static void fileMove(String src, String dest) {
     
-   
+    fileCopy(src, dest);
+    new File(src).delete();
     
   }
 
