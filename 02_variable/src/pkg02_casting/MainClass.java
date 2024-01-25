@@ -31,8 +31,6 @@ public class MainClass {
     System.out.println(z);
     
     
-    
-    
     /*
      * 문자열을 Number 타입으로 변환하기
      * 1. int로 변환하기
@@ -61,7 +59,6 @@ public class MainClass {
     int n4 = Integer.parseInt(s3);
     System.out.println(n4);
     
-
   }
 
 }

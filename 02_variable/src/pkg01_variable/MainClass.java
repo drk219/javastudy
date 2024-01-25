@@ -15,7 +15,6 @@ public class MainClass {
      *    3) 16진수 작성예시 : 0x123abc456
      */
     
-   
     /*
      * <식별자의 이름 규칙>
      * 1. Pascal case : 각 단어의 첫 글자는 대문자 나머지는 소문자  (클래스)
@@ -92,15 +91,11 @@ public class MainClass {
      *    4) 역슬래시 : \\
      */
     
-    
-    
     /*
      * 변수의 스코프(scope)
      * 1. 변수의 가용 범위를 의미한다.
      * 2. 변수가 선언된 코드 블록(중괄호, {})내에서만 사용할 수 있다.
      */
-    
-    
     
     /*
      * 상수
@@ -111,11 +106,10 @@ public class MainClass {
      *   2)반드시 초기값을 지정한다.
      *   3)관례상 대문자로 작성한다.
      */
+    
     final double PI = 3.141592;
     // PI = 3.14;  값을 수정할 수 없다.
     System.out.println(PI);
-    
-    
     
     /*
      * String 클래스
@@ -125,7 +119,6 @@ public class MainClass {
      */
     String s = "hello world";
     System.out.println(s);
-    
     
     /*
      * ┌-------------┐
@@ -140,8 +133,6 @@ public class MainClass {
      * |             |
      * └-------------┘
      */
-    
-    
     
   }
 

@@ -14,7 +14,6 @@ public class MainClass {
      *    
      */
     
-    
     /*
      * 숏 서킷
      * 1. 연산 결과의 빠른 처리를 위한 동작이다.
@@ -25,8 +24,6 @@ public class MainClass {
     
     int n1 = 10;
     int n2 = 20;
-    
-    
     
     boolean a = n1 == 10 && n2 == 20; 
     boolean b = n1 == 10 && n2 == 10;
@@ -40,20 +37,14 @@ public class MainClass {
     System.out.println(d);
     
     
-    
-    
     boolean f = n1 == 10 || n2++ == 20;  // 숏서킷에 의해 n1==10에서 이미 true 가 떠서 n2++==20가 실행 안함.
     boolean g = n1 == 10 || ++n2 == 10;    // 숏서킷에 의해 n1==10에서 이미 true 가 떠서 ++n2==10가 실행 안함.
-    
     System.out.println(f);
     System.out.println(g);
     
     
-    
     boolean h = !(n1 == 10);
     System.out.println(h);
-    
-
     
   }
 

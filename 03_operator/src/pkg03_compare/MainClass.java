@@ -14,8 +14,8 @@ public class MainClass {
     System.out.println(a >= b);  // a >= b 이면 true
     System.out.println(a < b);   // a < b 이면 true
     System.out.println(a <= b);  // a <= b 이면 true
-    System.out.println(a == b);  // a가 b와 같으면 true
-    System.out.println(a != b);  // a가 b와 다르면 true
+    System.out.println(a == b);  // a 가 b 와 같으면 true
+    System.out.println(a != b);  // a 가 b 와 다르면 true
     
     
     // 문자열의 동등 비교는 사용을 금지한다.

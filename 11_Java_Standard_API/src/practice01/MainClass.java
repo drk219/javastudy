@@ -180,19 +180,21 @@ public class MainClass {
     int num = sc.nextInt(); 
     
     for(int i = 0; i < num; i++) {                         // num 은 인증번호 자리수
-      Integer code = secureRandom.nextInt();               // 일단 int 타입으로 잡고 필요시 char 타입으로 변환하기?
-      if(code) {
+      double code = secureRandom.nextDouble();             // 0.0 <= code < 1.0
+      
+      // 정수 대문자 소문자 발생 확률 : 33% 33% 34%
+      if(code < 0.33) {
         builder.append((secureRandom.nextInt(10)));        // (Int 타입) 0 ~ 9 (10개)
-      } else if (code) {
-        builder.append((char)(secureRandom.nextInt(26)));  // 아스키코드 ?? (char 타입으로 변환시키기) A~Z 대문자 (26개)
+      } else if (code < 0.66) {
+        builder.append((char)(secureRandom.nextInt(26) + 'A'));  // 아스키코드 ?? (char 타입으로 변환시키기) A~Z 대문자 (26개)
       } else {
-        builder.append((char)(secureRandom.nextInt(26)));  // 아스키코드 ?? (char 타입으로 변환시키기) a~z 소문자 (26개)
+        builder.append((char)(secureRandom.nextInt(26) + 'a'));  // 아스키코드 ?? (char 타입으로 변환시키기) a~z 소문자 (26개)
       }
     }
+    
     String result = builder.toString();                    // 생성된 인증코드
     System.out.println("생성된" + num + "자리 인증번호는 " + result + "입니다.");
-    
-    
+    sc.close();
     
   }
   
@@ -229,8 +231,7 @@ public class MainClass {
         System.out.println("Up!");
       }
     } while (answer != guess);               // 답이 틀리는 동안은 계속 반복해라    
-    
-    
+    sc.close();
     
   }
   
@@ -265,8 +266,6 @@ public class MainClass {
       String graph = builder.toString();  // StringBuilder에 추가된 문자열을 가져와서 문자열 변수 graph 에 저장
       System.out.println(i + " : " + graph + " " + count[i]);
     }
-
-    
     
   }
   
@@ -299,8 +298,21 @@ public class MainClass {
     //  16 22 18 24 23
     
     Random random = new Random();      // 번호를 랜덤으로 돌려
-    int[][] bingo = new int[5][5];     // 5 * 5 빙고판 생성
     
+    // 빙고 크기
+    final int SIZE = 5;
+    
+    // 빙고판 만들기
+    int[][] bingo = new int[SIZE][SIZE];
+    
+    // 순서대로 초기화
+    for(int i = 0; i < SIZE; i++) {
+      for(int j = 0; j < SIZE; j++) {
+        bingo[i][j] = (i * SIZE) + (j + 1);
+      }
+    }
+    
+    // 섞기
     for(int i = 0; i < bingo.length; i++) {
       for(int j = 0; j < bingo.length; j++) {
         bingo[i][j] = (i * bingo.length) + (j + 1);
