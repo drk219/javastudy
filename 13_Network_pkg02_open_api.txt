@@ -1,0 +1,33 @@
+13_Network/pkg02_open_api
+
+JSONObject -> { } 객체 처리 
+JSONArray  -> [ ] 배열 처리 
+
+JSONObject obj = {name:value}
+value가 int인 경우 obj.getInt(name)
+value가 String 경우 obj.getString(name)
+value가 {}객체인 경우 obj.getJSONOject(name)
+value가 []객체인 경우 obj.getJSONArray(name)
+
+
+String responseData = sb.toString();
+JSONObject obj =  new JSONObject(responseData);
+obj.getString("resultCode") == "00";
+obj.getString("resultMsg") == "NORMAL_CODE";
+obj.getJSONObject("items").getJSONArray("item") ;
+
+
+sb.toString() 내용
+
+{"resultCode":"00","resultMsg":"NORMAL_CODE",
+"items":{"item":[
+{"acc_year":"2022","occrrnc_dt":"2022020621","dght_cd":"2","occrrnc_day_cd":"1","dth_dnv_cnt":1,"injpsn_cnt":1,"se_dnv_cnt":0,"sl_dnv_cnt":0,"wnd_dnv_cnt":0,"occrrnc_lc_sido_cd":"1100","occrrnc_lc_sgg_cd":"1125","acc_ty_lclas_cd":"02","acc_ty_mlsfc_cd":"21","acc_ty_cd":"21","aslt_vtr_cd":"03 ","road_frm_lclas_cd":"02","road_frm_cd":"06","wrngdo_isrty_vhcty_lclas_cd":"02","dmge_isrty_vhcty_lclas_cd":"05","occrrnc_lc_x_crd":"946980  ","occrrnc_lc_y_crd":"1939662 ","lo_crd":"126.90052426","la_crd":"37.45463401"},
+{"acc_year":"2022","occrrnc_dt":"2022042811","dght_cd":"1","occrrnc_day_cd":"5","dth_dnv_cnt":1,"injpsn_cnt":1,"se_dnv_cnt":0,"sl_dnv_cnt":0,"wnd_dnv_cnt":0,"occrrnc_lc_sido_cd":"1100","occrrnc_lc_sgg_cd":"1125","acc_ty_lclas_cd":"01","acc_ty_mlsfc_cd":"15","acc_ty_cd":"05","aslt_vtr_cd":"05 ","road_frm_lclas_cd":"01","road_frm_cd":"05","wrngdo_isrty_vhcty_lclas_cd":"04","dmge_isrty_vhcty_lclas_cd":"12","occrrnc_lc_x_crd":"947247  ","occrrnc_lc_y_crd":"1941000 ","lo_crd":"126.90344717","la_crd":"37.46670900"},
+{"acc_year":"2022","occrrnc_dt":"2022043012","dght_cd":"1","occrrnc_day_cd":"7","dth_dnv_cnt":1,"injpsn_cnt":1,"se_dnv_cnt":0,"sl_dnv_cnt":0,"wnd_dnv_cnt":0,"occrrnc_lc_sido_cd":"1100","occrrnc_lc_sgg_cd":"1125","acc_ty_lclas_cd":"01","acc_ty_mlsfc_cd":"14","acc_ty_cd":"04","aslt_vtr_cd":"99 ","road_frm_lclas_cd":"01","road_frm_cd":"05","wrngdo_isrty_vhcty_lclas_cd":"10","dmge_isrty_vhcty_lclas_cd":"12","occrrnc_lc_x_crd":"946866  ","occrrnc_lc_y_crd":"1942124 ","lo_crd":"126.89905778","la_crd":"37.47681802"},
+{"acc_year":"2022","occrrnc_dt":"2022050813","dght_cd":"1","occrrnc_day_cd":"1","dth_dnv_cnt":1,"injpsn_cnt":2,"se_dnv_cnt":1,"sl_dnv_cnt":0,"wnd_dnv_cnt":0,"occrrnc_lc_sido_cd":"1100","occrrnc_lc_sgg_cd":"1125","acc_ty_lclas_cd":"03","acc_ty_mlsfc_cd":"35","acc_ty_cd":"37","aslt_vtr_cd":"05 ","road_frm_lclas_cd":"01","road_frm_cd":"05","wrngdo_isrty_vhcty_lclas_cd":"01","dmge_isrty_vhcty_lclas_cd":"##","occrrnc_lc_x_crd":"948831  ","occrrnc_lc_y_crd":"1939409 ","lo_crd":"126.92146934","la_crd":"37.45245796"},
+{"acc_year":"2022","occrrnc_dt":"2022052414","dght_cd":"1","occrrnc_day_cd":"3","dth_dnv_cnt":1,"injpsn_cnt":1,"se_dnv_cnt":0,"sl_dnv_cnt":0,"wnd_dnv_cnt":0,"occrrnc_lc_sido_cd":"1100","occrrnc_lc_sgg_cd":"1125","acc_ty_lclas_cd":"02","acc_ty_mlsfc_cd":"24","acc_ty_cd":"25","aslt_vtr_cd":"05 ","road_frm_lclas_cd":"01","road_frm_cd":"05","wrngdo_isrty_vhcty_lclas_cd":"10","dmge_isrty_vhcty_lclas_cd":"98","occrrnc_lc_x_crd":"946768  ","occrrnc_lc_y_crd":"1941067 ","lo_crd":"126.89802587","la_crd":"37.46728542"},
+{"acc_year":"2022","occrrnc_dt":"2022071309","dght_cd":"1","occrrnc_day_cd":"4","dth_dnv_cnt":1,"injpsn_cnt":1,"se_dnv_cnt":0,"sl_dnv_cnt":0,"wnd_dnv_cnt":0,"occrrnc_lc_sido_cd":"1100","occrrnc_lc_sgg_cd":"1125","acc_ty_lclas_cd":"02","acc_ty_mlsfc_cd":"24","acc_ty_cd":"25","aslt_vtr_cd":"02 ","road_frm_lclas_cd":"01","road_frm_cd":"05","wrngdo_isrty_vhcty_lclas_cd":"03","dmge_isrty_vhcty_lclas_cd":"01","occrrnc_lc_x_crd":"946799  ","occrrnc_lc_y_crd":"1941081 ","lo_crd":"126.89837540","la_crd":"37.46741339"},
+{"acc_year":"2022","occrrnc_dt":"2022120212","dght_cd":"1","occrrnc_day_cd":"6","dth_dnv_cnt":1,"injpsn_cnt":1,"se_dnv_cnt":0,"sl_dnv_cnt":0,"wnd_dnv_cnt":0,"occrrnc_lc_sido_cd":"1100","occrrnc_lc_sgg_cd":"1125","acc_ty_lclas_cd":"01","acc_ty_mlsfc_cd":"15","acc_ty_cd":"05","aslt_vtr_cd":"05 ","road_frm_lclas_cd":"02","road_frm_cd":"06","wrngdo_isrty_vhcty_lclas_cd":"01","dmge_isrty_vhcty_lclas_cd":"12","occrrnc_lc_x_crd":"947224  ","occrrnc_lc_y_crd":"1942266 ","lo_crd":"126.90309635","la_crd":"37.47811842"},
+{"acc_year":"2022","occrrnc_dt":"2022120901","dght_cd":"2","occrrnc_day_cd":"6","dth_dnv_cnt":1,"injpsn_cnt":1,"se_dnv_cnt":0,"sl_dnv_cnt":0,"wnd_dnv_cnt":0,"occrrnc_lc_sido_cd":"1100","occrrnc_lc_sgg_cd":"1125","acc_ty_lclas_cd":"01","acc_ty_mlsfc_cd":"15","acc_ty_cd":"05","aslt_vtr_cd":"05 ","road_frm_lclas_cd":"02","road_frm_cd":"06","wrngdo_isrty_vhcty_lclas_cd":"01","dmge_isrty_vhcty_lclas_cd":"12","occrrnc_lc_x_crd":"946799  ","occrrnc_lc_y_crd":"1941528 ","lo_crd":"126.89834311","la_crd":"37.47144229"},
+{"acc_year":"2022","occrrnc_dt":"2022121416","dght_cd":"1","occrrnc_day_cd":"4","dth_dnv_cnt":1,"injpsn_cnt":1,"se_dnv_cnt":0,"sl_dnv_cnt":0,"wnd_dnv_cnt":0,"occrrnc_lc_sido_cd":"1100","occrrnc_lc_sgg_cd":"1125","acc_ty_lclas_cd":"01","acc_ty_mlsfc_cd":"15","acc_ty_cd":"05","aslt_vtr_cd":"05 ","road_frm_lclas_cd":"01","road_frm_cd":"05","wrngdo_isrty_vhcty_lclas_cd":"02","dmge_isrty_vhcty_lclas_cd":"12","occrrnc_lc_x_crd":"946436  ","occrrnc_lc_y_crd":"1941773 ","lo_crd":"126.89422029","la_crd":"37.47362955"}]},
+"totalCount":9,"numOfRows":9,"pageNo":1}
